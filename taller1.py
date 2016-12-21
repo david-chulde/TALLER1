@@ -110,3 +110,14 @@ for txt, val in languages:
     command=ShowChoice1,
     value=val).pack(anchor=W)
 
+
+print("EJERCICIO #7")
+
+from tkinter import *
+master = Tk()
+Button(master,text="finalizar",command=master.quit).grid(row=2,column=2)
+var1 = IntVar()
+Checkbutton(master, text="Hombre", variable=var1).grid(row=0, sticky=W)
+var2 = IntVar()
+Checkbutton(master, text="Mujer", variable=var2).grid(row=1, sticky=W)
+master.mainloop()
